@@ -1,0 +1,47 @@
+#Primeiro projeto Python do Carlos: (31/01/2022, 20:30)
+#Este projeto não teve recurso a nenhum toturial e foi só usando conhecimentos até à data adquiridos)
+
+#Carlos Calculator:
+
+#Menu:
+print("--Welcome to Carlos Personalized Calculator--\nPlease choose a operation to execute:")
+menu = print("0- Exit\n01- Addition\n02- Subtraction\n03- Multiplication\n04- Division")
+selection = input("What type of operation do you want to solve?\nOperation Number: ")
+if (selection) > str("04"):
+  print("!!!You haven't choose any available option, please retry and select one of the options above.!!!")
+if (selection) < str("0"):
+  print("!!!You haven't choose any available option, please retry and select one of the options above.!!!")
+
+#For Exit:
+if (selection) == str("0"):
+  print("")
+
+#For additions:
+number1 = "Insert here the first number of the operation: "
+number2 = "Insert here the second number of the operation: "
+if (selection) == str("01"): 
+ result1 = int(input(number1)) + int(input(number2))
+ print("The result of your operation is: " + str(result1))
+
+#For subtractions:
+number3 = "Insert here the first number of the operation: "
+number4 = "Insert here the second number of the operation: "
+if (selection) == str("02"): 
+ result2 = int(input(number3)) - int(input(number4))
+ print("The result of your operation is: " + str(result2))
+
+#For multiplications:
+number5 = "Insert here the first number of the operation: "
+number6 = "Insert here the second number of the operation: "
+if (selection) == str("03"): 
+ result3 = int(input(number5)) * int(input(number6))
+ print("The result of your operation is: " + str(result3))
+
+#For divisions:
+number7 = "Insert here the first number of the operation: "
+number8 = "Insert here the second number of the operation: "
+if (selection) == str("04"): 
+ result4 = int(input(number7)) / int(input(number8))
+ print("The result of your operation is: " + str(result4))
+
+#!!!END OF THE CODE!!!
